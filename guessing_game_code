@@ -1,0 +1,14 @@
+secret_number = 9
+guess_count = 0
+guess_count_limit = 4
+
+while guess_count < guess_count_limit:
+    count = int(input("Guess a number: "))
+    guess_count += 1
+    if count == secret_number:
+        print(f"You guessed right!")
+        break
+    else:
+        print(f"{count} is a wrong number")
+else:
+    print("\nTime is up!")
